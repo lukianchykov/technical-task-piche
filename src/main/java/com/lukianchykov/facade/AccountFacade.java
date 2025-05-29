@@ -6,7 +6,6 @@ import com.lukianchykov.domain.Account;
 import com.lukianchykov.dto.AccountDto;
 import com.lukianchykov.dto.CreateAccountRequest;
 import com.lukianchykov.mapper.AccountMapper;
-import com.lukianchykov.repository.AccountRepository;
 import com.lukianchykov.service.AccountService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

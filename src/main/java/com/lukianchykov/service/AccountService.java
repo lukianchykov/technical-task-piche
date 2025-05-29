@@ -4,9 +4,7 @@ import java.util.List;
 import java.util.UUID;
 
 import com.lukianchykov.domain.Account;
-import com.lukianchykov.domain.AccountTransaction;
 import com.lukianchykov.repository.AccountRepository;
-import com.lukianchykov.repository.AccountTransactionRepository;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.stereotype.Service;
