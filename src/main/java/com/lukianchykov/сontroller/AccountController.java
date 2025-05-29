@@ -3,7 +3,7 @@ package com.lukianchykov.сontroller;
 import java.util.List;
 
 import com.lukianchykov.dto.AccountDto;
-import com.lukianchykov.dto.CreateAccountRequest;
+import com.lukianchykov.dto.AccountCreateRequest;
 import com.lukianchykov.facade.AccountFacade;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -33,7 +33,7 @@ public class AccountController {
 
     @PostMapping
     @PreAuthorize("hasRole('USER') or hasRole('MANAGER') or hasRole('ADMIN')")
-    public AccountDto createAccount(@RequestBody CreateAccountRequest request) {
+    public AccountDto createAccount(@RequestBody AccountCreateRequest request) {
         return accountFacade.createAccount(request);
     }
 

@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreateAccountRequest {
+public class AccountCreateRequest {
 
     @JsonProperty("owner_name")
     private String ownerName;

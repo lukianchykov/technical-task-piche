@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.lukianchykov.domain.Account;
 import com.lukianchykov.dto.AccountDto;
-import com.lukianchykov.dto.CreateAccountRequest;
+import com.lukianchykov.dto.AccountCreateRequest;
 import com.lukianchykov.mapper.AccountMapper;
 import com.lukianchykov.service.AccountService;
 import org.junit.jupiter.api.BeforeEach;
@@ -35,7 +35,7 @@ class AccountFacadeTest {
 
     @Test
     void createAccount_shouldReturnDto() {
-        CreateAccountRequest request = new CreateAccountRequest("John Doe", 1000.0);
+        AccountCreateRequest request = new AccountCreateRequest("John Doe", 1000.0);
         Account account = new Account();
         account.setAccountNumber("ACC123");
         account.setOwnerName("John Doe");

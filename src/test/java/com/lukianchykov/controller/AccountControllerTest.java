@@ -5,7 +5,7 @@ import java.util.List;
 import brave.Tracer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lukianchykov.dto.AccountDto;
-import com.lukianchykov.dto.CreateAccountRequest;
+import com.lukianchykov.dto.AccountCreateRequest;
 import com.lukianchykov.facade.AccountFacade;
 import com.lukianchykov.сontroller.AccountController;
 import org.junit.jupiter.api.Test;
@@ -41,7 +41,7 @@ class AccountControllerTest {
 
     @Test
     void shouldCreateAccount() throws Exception {
-        CreateAccountRequest request = new CreateAccountRequest("John Doe", 1000.0);
+        AccountCreateRequest request = new AccountCreateRequest("John Doe", 1000.0);
 
         AccountDto response = AccountDto.builder()
             .id(1L)

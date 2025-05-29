@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.lukianchykov.domain.Account;
 import com.lukianchykov.dto.AccountDto;
-import com.lukianchykov.dto.CreateAccountRequest;
+import com.lukianchykov.dto.AccountCreateRequest;
 import com.lukianchykov.mapper.AccountMapper;
 import com.lukianchykov.service.AccountService;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +21,7 @@ public class AccountFacade {
 
     private final AccountMapper accountMapper;
 
-    public AccountDto createAccount(CreateAccountRequest request) {
+    public AccountDto createAccount(AccountCreateRequest request) {
         var account = accountService.createAccount(request.getOwnerName(), request.getInitialBalance());
         return accountMapper.toDto(account);
     }
